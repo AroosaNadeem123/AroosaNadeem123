@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DentalCare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header"></div>
+  </header>
+
+  <!-- Navigation -->
+  <header class="site-navbar">
+    <div class="logo">Dental<span>Care</span>.</div>
+    <span></span><span></span><span></span>
+  </header>
+
+  <nav id="site-menu" class="site-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Results</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>LET US BRIGHTEN<br>YOUR SMILE</h1>
+      <p>Your smile deserves the best care. Let’s brighten it—together.</p>
+      <a href="#" class="btn">Make Appointment</a>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-down" onclick="scrollToNextSection()">SCROLL DOWN</div>
+  </section>
+
+
+  <!-- Hamburger icon -->
+  <div class="hamburger" onclick="openMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Full screen menu -->
+  <div class="menu" id="menu">
+    <div class="close-btn" onclick="closeMenu()">✕</div>
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Results</a>
+    <a href="#">Contact</a>
+  </div>
+<!-- Home Section -->
+<section id="home">
+</section>
+<!-- About Section -->
+<section id="about-us ">
+</section>
+<!-- Contact Section -->
+<section id="services">
+</section>
+<section id="results">
+</section>
+<section id="contact">
+</section>
+  <!-- Make Appointment Form Section -->
+  <section class="appointment-section" id="appointment">
+    <div class="container">
+      <h2>MAKE APPOINTMENT</h2>
+     <form id="appointment-form" class="appointment-form" action="appointment.php" method="POST">
+        <label for="name">Your Name :</label>
+        <input type="text" id="name" name="name" placeholder="enter your name" required>
+        <label for="email">Your Email :</label>
+        <input type="email" id="email" name="email" placeholder="enter your email" required>
+        <label for="number">Your Number :</label>
+        <input type="tel" id="number" name="number" placeholder="enter your number" required>
+        <label for="date">Appointment Date :</label>
+        <input type="datetime-local" id="date" name="date" required>
+        <button type="submit" class="appointment-btn">Make Appointment</button>
+      </form>
+    </div>
+   <section class="about-us" id="about-us">
+  <div class="about-container">
+    <!-- Left Side: Doctor Info -->
+    <div class="doctor-left">
+      <p class="welcome-msg">Welcome to the Dr. Arooba and Associates</p>
+      <div class="doctor-profile">
+        <h2>Dr. Arooba Nadeem</h2>
+        <p><strong>BDS, FCPS</strong></p>
+        <p>Consultant Dentist Oral & Maxillofacial Surgeon</p>
+      </div>
+    </div>
+
+    <!-- Right Side: Image and Heading -->
+    <div class="about-text">
+      <h1>ABOUT US</h1>
+      <div class="about-image">
+        <img src="DENTIST.png" alt="Dr. Arooba">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- OUR SERVICES Section Start -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">OUR SERVICES</h2>
+      <div class="services-grid">
+        <div class="service-box">
+          <img src="dental-implant.png" alt="Dental Implants">
+          <h3>Dental Implants</h3>
+          <p>Restore your smile and confidence with dental implants. Say goodbye to missing teeth and hello to a natural-looking smile.</p>
+        </div>
+        <div class="service-box">
+          <img src="orthodontic.png" alt="Orthodontics">
+          <h3>Orthodontics</h3>
+          <p>Achieve a straighter smile with our orthodontic solutions. Start your journey to a perfect smile today.</p>
+        </div>
+        <div class="service-box">
+          <img src="tooth-whitening.png" alt="Teeth Whitening">
+          <h3>Teeth Whitening</h3>
+          <p>Get rid of stains and enjoy spotless teeth. Achieve the pearly white smile you desire.</p>
+        </div>
+        <div class="service-box">
+          <img src="dental-hygiene.png" alt="Scaling & Polishing">
+          <h3>Scaling & polishing</h3>
+          <p>Maintain a healthy mouth with teeth scaling and polishing. Remove plaque and enjoy a fresh, clean smile.</p>
+        </div>
+        <div class="service-box">
+          <img src="root-canal.png" alt="Root Canal">
+          <h3>Root Canal</h3>
+          <p>Stop the pain and save your tooth with our root canal treatment. Experience gentle, effective care.</p>
+        </div>
+        <div class="service-box">
+          <img src="veneer.png" alt="Veneer">
+          <h3>Veneer</h3>
+          <p>Transform your smile with custom veneers. Enjoy a flawless, radiant look tailored just for you.</p>
+        </div>
+        <div class="service-box">
+          <img src="dental-crown.png" alt="Crowns & Bridges">
+          <h3>Crowns & Bridges</h3>
+          <p>Fix damaged or missing teeth with our crowns and bridges. Restore strength and beauty.</p>
+        </div>
+        <div class="service-box">
+          <img src="dentures.png" alt="Dentures">
+          <h3>Dentures</h3>
+          <p>Regain function and aesthetics with custom-fit dentures. Enjoy the comfort and confidence to smile freely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- OUR SERVICES Section End -->
+
+  <!-- RESULTS Section Start -->
+  <section class="results-section" id="results">
+    <div class="container">
+      <h2 class="section-title">RESULTS</h2>
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="slide">
+            <img src="1Resulttop.png" alt="Before 1" />
+            <img src="1Resultbottom.png" alt="After 1" />
+          </div>
+          <div class="slide">
+            <img src="2Resulttop.png" alt="Before 2" />
+            <img src="2Resultbottom.png" alt="After 2" />
+          </div>
+          <div class="slide">
+            <img src="3Resulttop.png" alt="Before 3" />
+            <img src="3Resultbottom.png" alt="After 3" />
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <button class="carousel-btn prev">❮</button>
+        <button class="carousel-btn next">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- HTML (footer.html) -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left Column -->
+    <div class="footer-col left">
+      <h1><span>Dental</span>Care</h1>
+      <p>We provide affordable and painless solutions for all dental problems.</p>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Behind mkh office#4  Road F - 9 Islamabad</li>
+        <li><i class="fas fa-phone"></i> +923320455501</li>
+        <li><i class="fas fa-envelope"></i> contact@main.com</li>
+        <li><i class="fas fa-clock"></i> Mon – Sun Open 7 days a week</li>
+      </ul>
+    </div>
+
+    <!-- Middle Column -->
+    <div class="footer-col middle">
+      <h2>We Are Working On</h2>
+      <p><strong>Working Days:</strong><br>Monday – Sunday</p>
+      <p><strong>Working Days:</strong><br>4.00 PM – 10.00 PM</p>
+      <h3>Follow Us</h3>
+      <p>Follow us on Instagram and Facebook</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fas fa-rss-square"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-col right">
+      <h2>Get Tips On Dental Care</h2>
+      <p>If you want to get regular updates and tips regarding your oral and dental health please subscribe to our email services</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="enter your email" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2021 Dr Arooba Nadeem And Associates | PopularFX Theme</div>
+</footer>
+<!-- In <head> of your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="main.js"></script>
+</body>
+</html>
